@@ -1,291 +1,297 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="img/wild bird logo_text.svg" />
-    <meta charset="utf-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/hamburger.css">
-    <link rel="stylesheet" href="css/involved.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/wild bird logo_text.svg" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="css/involved.css">
 
 
 
 </head>
+
 <body>
-    
 
-<div style="width: 100%; overflow: hidden;">
-        <svg class="mysvg">
-            <filter id="noise" x='0%' y='0%' width='100%' height='100%'>
-                <feTurbulence  class="turbwave"  baseFrequency="0" result="NOISE" numOctaves="1" id="turbulence" />
-                <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
-            </filter>
-        </svg>
-        <svg class="mysvg">
-            <filter id="noise2" x='0%' y='0%' width='100%' height='100%'>
-                <feTurbulence  class="turbwave"  baseFrequency="0" result="NOISE" numOctaves="1" id="turbulence2" />
-                <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
-            </filter>
-        </svg>
-        <svg class="mysvg">
-            <filter id="noise3" x='0%' y='0%' width='100%' height='100%'>
-                <feTurbulence  class="turbwave"  baseFrequency="0" result="NOISE" numOctaves="1" id="turbulence3" />
-                <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
-            </filter>
-        </svg>
-        <section class="forest1">
-            <img class="forest" src="img/abstract-bird.jpg" alt="">
-    
 
-        <div class="">
- 
-            <nav class="navbar navbar-expand-lg navbar-dark flex-container " >
-        
-            
-            <a class="navbar-brand logo" href="home.html">
-                <img src="img/wild bird logo_text.png" width="125" alt="">
-            </a>
-                <!-- main menu -->
-                <input type="checkbox" class="menu-btn" id="menu-btn">
-                <label for="menu-btn" class="menu-icon" style="z-index: 5;">
-                  <span class="menu-icon_line"></span>
-                </label>
-                
-                <ul class="navbar-nav "  >
-                    <li class="dropdown" ><a class="nav-link nav-size dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Latest Activities</a>
-                        <ul class="dropdown-menu dropdown-warning droppersonal" aria-labelledby="navbarDropdown1">
-                            <li style="text-align:center;"><a class="" href="activity_indoor.html">Indoor</a></li>
-                            <li style="text-align:center;"><a class="" href="activity_indoor.html">Outdoor</a></li>
-                            <li style="text-align:center;"><a class="" href="activity_indoor.html">News Room</a></li>
-                        </ul>
-                    </li>
-                    <li ><a class="nav-link nav-size" href="digital_adoption.html">Digital Adoption</a></li>
-                    <li ><a class="nav-link nav-size" href="injured_bird.html">Injured Birds</a></li>
-                    <li ><a class="nav-link nav-size" href="involved.html">Get Involved</a></li>
-                    
-                  
-                </ul>
-        
-                <!-- sub menu -->
-                <ul class="navbar-nav2" style="color: rgba(255,255,255,.5); font-size: 12px;">
-                     <li>
-                         <div href="" class="nav-link" ><i class="fas  fa-sign-in-alt fa-1.5x "></i><span class="sidenav-size"  id="spanLogin">Log in/ Register</span></div>
-                     </li>
-                 </ul>   
-         
-            </nav>
-        
-        </div>
-    
-        
- 
-      
+  <div style="width: 100%; overflow: hidden;">
+    <svg class="mysvg">
+      <filter id="noise" x='0%' y='0%' width='100%' height='100%'>
+        <feTurbulence class="turbwave" baseFrequency="0" result="NOISE" numOctaves="1" id="turbulence" />
+        <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
+      </filter>
+    </svg>
+    <svg class="mysvg">
+      <filter id="noise2" x='0%' y='0%' width='100%' height='100%'>
+        <feTurbulence class="turbwave" baseFrequency="0" result="NOISE" numOctaves="1" id="turbulence2" />
+        <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
+      </filter>
+    </svg>
+    <svg class="mysvg">
+      <filter id="noise3" x='0%' y='0%' width='100%' height='100%'>
+        <feTurbulence class="turbwave" baseFrequency="0" result="NOISE" numOctaves="1" id="turbulence3" />
+        <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
+      </filter>
+    </svg>
+    <section class="forest1">
+      <img class="forest" src="img/abstract-bird.jpg" alt="">
+
+
+      <div class="">
+
+        <nav class="navbar navbar-expand-lg navbar-dark flex-container ">
+
+
+          <a class="navbar-brand logo" href="home.html">
+            <img src="img/wild bird logo_text.png" width="125" alt="">
+          </a>
+          <!-- main menu -->
+          <input type="checkbox" class="menu-btn" id="menu-btn">
+          <label for="menu-btn" class="menu-icon" style="z-index: 5;">
+            <span class="menu-icon_line"></span>
+          </label>
+
+          <ul class="navbar-nav ">
+            <li class="dropdown"><a class="nav-link nav-size dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Latest Activities</a>
+              <ul class="dropdown-menu dropdown-warning droppersonal" aria-labelledby="navbarDropdown1">
+                <li style="text-align:center;"><a class="" href="activity_indoor.html">Indoor</a></li>
+                <li style="text-align:center;"><a class="" href="activity_indoor.html">Outdoor</a></li>
+                <li style="text-align:center;"><a class="" href="activity_indoor.html">News Room</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link nav-size" href="digital_adoption.html">Digital Adoption</a></li>
+            <li><a class="nav-link nav-size" href="injured_bird.html">Injured Birds</a></li>
+            <li><a class="nav-link nav-size" href="involved.html">Get Involved</a></li>
+
+
+          </ul>
+
+          <!-- sub menu -->
+          <ul class="navbar-nav2" style="color: rgba(255,255,255,.5); font-size: 12px;">
+            <li>
+              <div href="" class="nav-link"><i class="fas  fa-sign-in-alt fa-1.5x "></i><span class="sidenav-size" id="spanLogin">Log in/ Register</span></div>
+            </li>
+          </ul>
+
+        </nav>
+
+      </div>
+
+
+
+
 
     </section>
 
     <section class="section" style="height: 100vh; ">
-       
-        <h1 class="slogan" >          
-            <span class="span" > Get</span> <br> <span class="span">Involved</span>       
-        </h1>
-        <p class="p" >Your support is critical to ensure that Wild Bird Shelter can continue its work, delivering high impact and long-term conservation for both people and nature. </p>
-      
+
+      <h1 class="slogan">
+        <span class="span"> Get</span> <br> <span class="span">Involved</span>
+      </h1>
+      <p class="p">Your support is critical to ensure that Wild Bird Shelter can continue its work, delivering high impact and long-term conservation for both people and nature. </p>
+
     </section>
 
     <section style="  background-color: ivory;">
-   
-        <h1 class="cause">What We Do</h1>
-        <div class="intro-content">
-            <div class="intro-wrap z1">
-                <div class="intro-text">
-                    <h3>
-                        <span style="color: lightgray; font-size: 20px;">Conservation</span>
-                        <br> Protecting the Natural World
-                    </h3>
-                    <p style="margin-top: 40px;">Conserving birds and biodiversity in the 21st century is a complex endeavor that requires innovative science and technology, a detailed understanding of ecological and social systems, and the ability to implement sustainable solutions at global and local scales.</p>
-                   
-                </div>
-                <div class="intro-img">
-                    <div class="img-pos">
-                        <img class="img-nature pic" src="img/nature.jpg" alt=""  >
-                    </div> 
-                </div>
-                
+
+      <h1 class="cause">What We Do</h1>
+      <div class="intro-content">
+        <div class="intro-wrap z1">
+          <div class="intro-text">
+            <h3>
+              <span style="color: lightgray; font-size: 20px;">Conservation</span>
+              <br> Protecting the Natural World
+            </h3>
+            <p style="margin-top: 40px;">Conserving birds and biodiversity in the 21st century is a complex endeavor that requires innovative science and technology, a detailed understanding of ecological and social systems, and the ability to
+              implement sustainable solutions at global and local scales.</p>
+
+          </div>
+          <div class="intro-img">
+            <div class="img-pos">
+              <img class="img-nature pic" src="img/nature.jpg" alt="">
             </div>
+          </div>
+
         </div>
-         
+      </div>
+
 
     </section>
-    
 
-</div>
-    
 
-   
-    <div  id="para-img" >
-
-    </div>
-            
+  </div>
 
 
 
-<section style="  background-color: ivory;">
+  <div id="para-img">
 
-    
+  </div>
+
+
+
+
+  <section style="  background-color: ivory;">
+
+
     <div class="intro-content" style="padding-top: 150px;">
-        <div class="intro-wrap z2">
-            <div class="intro-img">
-                <div class="img-pos">
-                    <img class="img-nature2 pic2" src="img/nature2.jpg" alt=""  >
-                </div> 
-            </div>
-            <div class="intro-text">
-                <h3>
-                    <span style="color: lightgray; font-size: 20px;">Science & Innovation</span>
-                    <br> Discovering New Knowledge
-                </h3>
-                <p style="margin-top: 40px;">We transform data into knowledge by pioneering new techniques at the interface of citizen science, machine learning, and data visualizations. Our field and lab studies explore the earth’s biodiversity, the processes that have generated it, and ways to conserve this abundance of life. Key partners in much of this research are the many thousands of people who volunteer for our citizen-science projects.</p>
-               
-            </div>
-           
-            
+      <div class="intro-wrap z2">
+        <div class="intro-img">
+          <div class="img-pos">
+            <img class="img-nature2 pic2" src="img/nature2.jpg" alt="">
+          </div>
         </div>
+        <div class="intro-text">
+          <h3>
+            <span style="color: lightgray; font-size: 20px;">Science & Innovation</span>
+            <br> Discovering New Knowledge
+          </h3>
+          <p style="margin-top: 40px;">We transform data into knowledge by pioneering new techniques at the interface of citizen science, machine learning, and data visualizations. Our field and lab studies explore the earth’s biodiversity, the
+            processes that have generated it, and ways to conserve this abundance of life. Key partners in much of this research are the many thousands of people who volunteer for our citizen-science projects.</p>
+
+        </div>
+
+
+      </div>
     </div>
-     
-
-</section>
 
 
-</div>
+  </section>
 
-<section style="  background-color: ivory;">
 
-    
+  </div>
+
+  <section style="  background-color: ivory;">
+
+
     <div class="intro-content" style="padding-top: 90px;">
-        <div class="intro-wrap z3">
+      <div class="intro-wrap z3">
 
-            <div class="intro-text">
-                <h3>
-                    <span style="color: lightgray; font-size: 20px;">Education</span>
-                    <br> Changing Hearts and Minds
-                </h3>
-                <p style="margin-top: 40px;">We open the doors to inquiry and learning about the natural world, starting with the earliest ages and lasting a lifetime. Whether you’re a bird lover, an educator, or a student, our curricula, interactive courses, and professional development opportunities will empower you to explore the fascinating lives of birds and ignite a lifelong passion for nature.</p>
-               
-            </div>
-            <div class="intro-img">
-                <div class="img-pos">
-                    <img class="img-nature pic3" src="img/Education-FI.jpg" alt=""  >
-                </div> 
-            </div>
-            
+        <div class="intro-text">
+          <h3>
+            <span style="color: lightgray; font-size: 20px;">Education</span>
+            <br> Changing Hearts and Minds
+          </h3>
+          <p style="margin-top: 40px;">We open the doors to inquiry and learning about the natural world, starting with the earliest ages and lasting a lifetime. Whether you’re a bird lover, an educator, or a student, our curricula, interactive
+            courses, and professional development opportunities will empower you to explore the fascinating lives of birds and ignite a lifelong passion for nature.</p>
+
         </div>
+        <div class="intro-img">
+          <div class="img-pos">
+            <img class="img-nature pic3" src="img/Education-FI.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
     </div>
-     
-
-</section>
 
 
-<section style="height: 100vh; position: relative;" >
+  </section>
+
+
+  <section style="height: 100vh; position: relative;">
 
     <div class="tab_container">
-  
-        <div class="tab_list_block">
-          <ul class="tab_list">
-            <li class="tab-lists"><a href="#" data-target="tab1" class="tab -on">Donate Once</a></li>
-            <li class="tab-lists"><a href="#" data-target="tab2" class="tab">Give Monthly</a></li>
-            <li class="tab-lists"><a href="#" data-target="tab3" class="tab">Give Yearly</a></li>
-            <li class="tab-lists"><a href="#" data-target="tab1" class="tab">More Ways</a></li>
-          </ul>
-        </div>
-        
-        <div class="tab_contents">
-          
-          <div class="tab tab1 -on">
-            <h3>Donate to WBS</h3> 
-            <br>
-            You can protect threatened species and their habitats today with a monthly donation to Wild Bird Shelter. Your support of WBS's global conservation work will make a world of difference.
-            <div class="input-div" >
-                <div class="divwrap">
-                <input type="radio" value="" id="level_1000" name="level_id">
-                <label for="level_1000" class="label">$1,000</label>
-                </div>
-                
-                <div class="divwrap">
-                <input type="radio" value="" id="level_2000" name="level_id">
-                <label for="level_2000" class="label">$2,000</label>
-                </div>
-                
-                <div class="divwrap">
-                <input type="radio" value="" id="level_3000" name="level_id">
-                <label for="level_3000" class="label">$3,000</label>
-                </div>
-                
+
+      <div class="tab_list_block">
+        <ul class="tab_list">
+          <li class="tab-lists"><a href="#" data-target="tab1" class="tab -on">Donate Once</a></li>
+          <li class="tab-lists"><a href="#" data-target="tab2" class="tab">Give Monthly</a></li>
+          <li class="tab-lists"><a href="#" data-target="tab3" class="tab">Give Yearly</a></li>
+          <li class="tab-lists"><a href="#" data-target="tab1" class="tab">More Ways</a></li>
+        </ul>
+      </div>
+
+      <div class="tab_contents">
+
+        <div class="tab tab1 -on">
+          <h3>Donate to WBS</h3>
+          <br>
+          You can protect threatened species and their habitats today with a monthly donation to Wild Bird Shelter. Your support of WBS's global conservation work will make a world of difference.
+          <div class="input-div">
+            <div class="divwrap">
+              <input type="radio" value="" id="level_1000" name="level_id">
+              <label for="level_1000" class="label">$1,000</label>
             </div>
-            
-            <div style="text-align: center;"><span class="proceed">Proceed to Payment</span></div>
+
+            <div class="divwrap">
+              <input type="radio" value="" id="level_2000" name="level_id">
+              <label for="level_2000" class="label">$2,000</label>
+            </div>
+
+            <div class="divwrap">
+              <input type="radio" value="" id="level_3000" name="level_id">
+              <label for="level_3000" class="label">$3,000</label>
+            </div>
 
           </div>
-          
-          <div class="tab tab2">
-            <h3>Make a Monthly Donation</h3>
-            <br>You can protect threatened species and their habitats today with a monthly donation to Wild Bird Shelter. Your support of WBS's global conservation work will make a world of difference.
-            <div class="input-div" >
-                <div class="divwrap">
-                <input type="radio" value="" id="level_1000" name="level_id">
-                <label for="level_1000">$50</label>
-                </div>
-                
-                <div class="divwrap">
-                <input type="radio" value="" id="level_2000" name="level_id">
-                <label for="level_2000">$70</label>
-                </div>
-                
-                <div class="divwrap">
-                <input type="radio" value="" id="level_3000" name="level_id">
-                <label for="level_3000">$90</label>
-                </div>
-                
-            </div>
-            
-            <div style="text-align: center;"><span class="proceed">Proceed to Payment</span></div>
-          </div>
-          
-          <div class="tab tab3">
-            <h3>Make a Yearly Donation</h3> 
-            <br>You can protect threatened species and their habitats today with a monthly donation to Wild Bird Shelter. Your support of WBS's global conservation work will make a world of difference.
-            <div class="input-div" >
-                <div class="divwrap">
-                <input type="radio" value="" id="level_1000" name="level_id">
-                <label for="level_1000">$1,000</label>
-                </div>
-                
-                <div class="divwrap">
-                <input type="radio" value="" id="level_2000" name="level_id">
-                <label for="level_2000">$2,000</label>
-                </div>
-                
-                <div class="divwrap">
-                <input type="radio" value="" id="level_3000" name="level_id">
-                <label for="level_3000">$3,000</label>
-                </div>
-                
-            </div>
-            
-            <div style="text-align: center;"><span class="proceed">Proceed to Payment</span></div>
-          </div>
+
+          <div style="text-align: center;"><span class="proceed">Proceed to Payment</span></div>
+
         </div>
-        
+
+        <div class="tab tab2">
+          <h3>Make a Monthly Donation</h3>
+          <br>You can protect threatened species and their habitats today with a monthly donation to Wild Bird Shelter. Your support of WBS's global conservation work will make a world of difference.
+          <div class="input-div">
+            <div class="divwrap">
+              <input type="radio" value="" id="level_1000" name="level_id">
+              <label for="level_1000">$50</label>
+            </div>
+
+            <div class="divwrap">
+              <input type="radio" value="" id="level_2000" name="level_id">
+              <label for="level_2000">$70</label>
+            </div>
+
+            <div class="divwrap">
+              <input type="radio" value="" id="level_3000" name="level_id">
+              <label for="level_3000">$90</label>
+            </div>
+
+          </div>
+
+          <div style="text-align: center;"><span class="proceed">Proceed to Payment</span></div>
+        </div>
+
+        <div class="tab tab3">
+          <h3>Make a Yearly Donation</h3>
+          <br>You can protect threatened species and their habitats today with a monthly donation to Wild Bird Shelter. Your support of WBS's global conservation work will make a world of difference.
+          <div class="input-div">
+            <div class="divwrap">
+              <input type="radio" value="" id="level_1000" name="level_id">
+              <label for="level_1000">$1,000</label>
+            </div>
+
+            <div class="divwrap">
+              <input type="radio" value="" id="level_2000" name="level_id">
+              <label for="level_2000">$2,000</label>
+            </div>
+
+            <div class="divwrap">
+              <input type="radio" value="" id="level_3000" name="level_id">
+              <label for="level_3000">$3,000</label>
+            </div>
+
+          </div>
+
+          <div style="text-align: center;"><span class="proceed">Proceed to Payment</span></div>
+        </div>
+      </div>
+
     </div>
 
-</section>
+  </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-<script src="js/involved.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="js/involved.js"></script>
 
 </body>
+
 </html>

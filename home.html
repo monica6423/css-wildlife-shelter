@@ -1,505 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="shortcut icon" type="image/x-icon" href="img/wild bird logo_text.svg" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/glider.css">
-    <link rel="stylesheet" href="css/style.css">
 
-    <title>Wild Bird Shelter</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="img/wild bird logo_text.svg" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/glider.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Wild Bird Shelter</title>
 </head>
-<body >
-   
+
+<body>
+
   <div class="page">
-    <a href="#sec1"><div class="pagecircle" id="high1"><span class="tooltiptext">HOME</span></div></a>
-    <a href="#sec2"><div class="pagecircle" id="high2" ><span class="tooltiptext">NEWS</span></div></a>
-    <a href="#sec3"><div class="pagecircle" id="high3"><span class="tooltiptext">ADOPTION</span></div></a>
-    <a href="#sec4"><div class="pagecircle" id="high4"><span class="tooltiptext">ABOUT</span></div></a>
+    <a href="#sec1">
+      <div class="pagecircle" id="high1"><span class="tooltiptext">HOME</span></div>
+    </a>
+    <a href="#sec2">
+      <div class="pagecircle" id="high2"><span class="tooltiptext">NEWS</span></div>
+    </a>
+    <a href="#sec3">
+      <div class="pagecircle" id="high3"><span class="tooltiptext">ADOPTION</span></div>
+    </a>
+    <a href="#sec4">
+      <div class="pagecircle" id="high4"><span class="tooltiptext">ABOUT</span></div>
+    </a>
 
   </div>
-      
 
-<section class="" id="sec1">
 
-<div class="backgroundzero"></div>
-<div class="backgroundslide">
-    <div class="backgroundtext">Ready to be a hero?</div>
-</div>   
+  <section class="" id="sec1">
 
-<!-- 燈箱：登入 -->
-<div id="lightBox" style="display: none;" style="z-index: 1000;">
-    <form cellspacing="0" id="tableLogin"  style="z-index: 1000;">
-    <input type="text" name="memId" id="memId" placeholder = "Username">
-    <input type="password" name="memPsw" id="memPsw" placeholder = "Password">
-    
-    <div>
-        <input type="button" id="btnLogin" value="Login" >
-        <input type="button" id="btnLoginCancel" value="Cancel">
+    <div class="backgroundzero"></div>
+    <div class="backgroundslide">
+      <div class="backgroundtext">Ready to be a hero?</div>
     </div>
-         
-    <div class="forgetpw"><h5 style="color: white; font-size: 12px;">Don't have an account?<a href="" style="color: orange; font-size: 12px;"> Sign up</a></h5></div>
-    </form>
-</div>
-  
+
+    <!-- 燈箱：登入 -->
+    <div id="lightBox" style="display: none;" style="z-index: 1000;">
+      <form cellspacing="0" id="tableLogin" style="z-index: 1000;">
+        <input type="text" name="memId" id="memId" placeholder="Username">
+        <input type="password" name="memPsw" id="memPsw" placeholder="Password">
+
+        <div>
+          <input type="button" id="btnLogin" value="Login">
+          <input type="button" id="btnLoginCancel" value="Cancel">
+        </div>
+
+        <div class="forgetpw">
+          <h5 style="color: white; font-size: 12px;">Don't have an account?<a href="" style="color: orange; font-size: 12px;"> Sign up</a></h5>
+        </div>
+      </form>
+    </div>
 
 
-<div class="">
- 
-    <nav class="navbar navbar-expand-lg navbar-dark flex-container " >
 
-    
-    <a class="navbar-brand logo" href="#">
-        <img src="img/wild bird logo_text.png" width="125" alt="">
-    </a>
+    <div class="">
+
+      <nav class="navbar navbar-expand-lg navbar-dark flex-container ">
+
+
+        <a class="navbar-brand logo" href="#">
+          <img src="img/wild bird logo_text.png" width="125" alt="">
+        </a>
         <!-- main menu -->
         <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon" style="z-index: 5;">
           <span class="menu-icon_line"></span>
         </label>
-        
-        <ul class="navbar-nav "  >
-            <li class="dropdown" ><a class="nav-link nav-size dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Latest Activities</a>
-                <ul class="dropdown-menu dropdown-warning droppersonal" aria-labelledby="navbarDropdown1">
-                    <li style="text-align:center;"><a class="" href="activity_indoor.html">Indoor</a></li>
-                    <li style="text-align:center;"><a class="" href="activity_indoor.html">Outdoor</a></li>
-                    <li style="text-align:center;"><a class="" href="activity_indoor.html">News Room</a></li>
-                </ul>
-            </li>
-            <li ><a class="nav-link nav-size" href="digital_adoption.html">Digital Adoption</a></li>
-            <li ><a class="nav-link nav-size" href="injured_bird.html">Injured Birds</a></li>
-            <li ><a class="nav-link nav-size" href="involved.html">Get Involved</a></li>
-            
-          
+
+        <ul class="navbar-nav ">
+          <li class="dropdown"><a class="nav-link nav-size dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Latest Activities</a>
+            <ul class="dropdown-menu dropdown-warning droppersonal" aria-labelledby="navbarDropdown1">
+              <li style="text-align:center;"><a class="" href="activity_indoor.html">Indoor</a></li>
+              <li style="text-align:center;"><a class="" href="activity_indoor.html">Outdoor</a></li>
+              <li style="text-align:center;"><a class="" href="activity_indoor.html">News Room</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link nav-size" href="digital_adoption.html">Digital Adoption</a></li>
+          <li><a class="nav-link nav-size" href="injured_bird.html">Injured Birds</a></li>
+          <li><a class="nav-link nav-size" href="involved.html">Get Involved</a></li>
+
+
         </ul>
 
         <!-- sub menu -->
         <ul class="navbar-nav2" style="color: rgba(255,255,255,.5); font-size: 12px;">
-             <li>
-                 <div href="" class="nav-link" ><i class="fas  fa-sign-in-alt fa-1.5x "></i><span class="sidenav-size"  id="spanLogin">Log in/ Register</span></div>
-             </li>
-         </ul>   
- 
-    </nav>
+          <li>
+            <div href="" class="nav-link"><i class="fas  fa-sign-in-alt fa-1.5x "></i><span class="sidenav-size" id="spanLogin">Log in/ Register</span></div>
+          </li>
+        </ul>
 
-</div>
+      </nav>
 
-<div class="bird">
-<!-- headline -->
-    <div class="container headline">
+    </div>
+
+    <div class="bird">
+      <!-- headline -->
+      <div class="container headline">
         <div class="row">
-            <div class="col-sm-12">
-                <h1 >
-                <span >Be a Bird Hero</span>
-                <p>Save bird save the world <i class="fas fa-long-arrow-alt-right arrow "></i></p>
-                </h1>
-            </div>
+          <div class="col-sm-12">
+            <h1>
+              <span>Be a Bird Hero</span>
+              <p>Save bird save the world <i class="fas fa-long-arrow-alt-right arrow "></i></p>
+            </h1>
+          </div>
         </div>
-    </div>
-
-
-   
-
-    <!-- carousel -->
-        <div class="glider-contain multiple" id="stage" data-name="Multiple Item">
-                    <div class="glider" id="glider-resp">
-                        <div class="glider-slide image menu ">
-                            <div class="menuItem-content">
-                                <a href=""><image class="menuItem-img" src="img/latest_news2.png" alt=""></a>
-                                <div class="fontcolor centered menuItem-text fancy-link"  >Latest <br> News</div>
-                            </div>
-                        </div>
-                        <div class="glider-slide image menu">
-                            <div class="menuItem-content">
-                                <a href=""><img class="menuItem-img" src="img/digital_adoption2.png" alt=""></a>
-                                <div class="fontcolor centered menuItem-text fancy-link "  >Digital <br> adoption</div>
-                            </div>
-                        </div>
-                        <div class="glider-slide image menu">
-                            <div class="menuItem-content">
-                                <a href=""><img class="menuItem-img" src="img/get_involved.png" alt=""></a>
-                                <div class="fontcolor centered menuItem-text fancy-link"  >Injured <br> birds</div>
-                            </div>
-                        </div>
-                        <div class="glider-slide image menu">
-                            <div class="menuItem-content">
-                            <a href=""><img class="menuItem-img" src="img/injured_birds2.png" alt=""></a>
-                            <div class="fontcolor centered menuItem-text fancy-link "  >Get <br> involved</div>
-                            </div>
-                        </div>
-                    </div>
-
-
-            <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-resp"><i class="fa fa-chevron-left"></i></i></button>
-            <button role="button" aria-label="Next" class="glider-next" id="glider-next-resp"><i class="fa fa-chevron-right"></i></i></button>
-        </div>
-   
-
-</div>
-</section>
+      </div>
 
 
 
 
-<section class="news " id="sec2">
-
-<div class="newsbutton">
-    <span class="section_title">What's New</span>
-    <div class="section_title2">
-        <h6 class="section_slogan">Discover all news<span class="section_slogan2">and activities at shelter.</span></h6> 
-    </div>
-</div>
-<div class="dashboard" >
-
-   
-
-    <div class="dashmain dashmain1 box">
-        <div class="newshead">
-            <div class="newsdate">
-              <span class="day">12</span>
-              <span class="month">Aug</span>
-              <span class="year">2016</span>
-            </div>
-            <ul class="menu-content">
-              <li>
-                <a href="#" class="far fa-bookmark fa-1.5x"></a>
-              </li>
-              <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
-              <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
-            </ul>
-        </div>
-        <div class="data">
-            <div class="content">
-              <span class="author">Jane Doe</span>
-              <h4 class="title"><a href="#">10 planet-friendly New Year’s resolutions</a></h4>
-              <p class="text">Start small by separating your trash by paper, plastic, metal! If you’re ready to...</p>
-              <a href="#" class="button">Read more</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="dashmain news2 all_news box"> 
-              
-        <div class="newshead">
-            <div class="newsdate">
-              <span class="day">12</span>
-              <span class="month">Aug</span>
-              <span class="year">2016</span>
-            </div>
-            <ul class="menu-content">
-              <li>
-                <a href="#" class="far fa-bookmark fa-1.5x"></a>
-              </li>
-              <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
-              <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
-            </ul>
-        </div>
-        <div class="data">
-            <div class="content">
-              <span class="author">Jane Doe</span>
-              <h4 class="title"><a href="#">Are Birds Actually Government-Issued Drones?</a></h4>
-              <p class="text">Hatched by a 20-year-old college student, the Birds Aren’t Real movement has drawn...</p>
-              <a href="#" class="button">Read more</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="dashmain news3 all_news box">   
-
-        <div class="newshead">
-            <div class="newsdate">
-              <span class="day">12</span>
-              <span class="month">Aug</span>
-              <span class="year">2016</span>
-            </div>
-            <ul class="menu-content">
-              <li>
-                <a href="#" class="far fa-bookmark fa-1.5x"></a>
-              </li>
-              <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
-              <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
-            </ul>
-        </div>
-        <div class="data">
-            <div class="content">
-              <span class="author">Jane Doe</span>
-              <h4 class="title"><a href="#">Baseball for the Birds: Team Rallies Around an Endangered Species</a></h4>
-              <p class="text">Hatched by a 20-year-old college student, the Birds Aren’t Real movement has drawn...</p>
-              <a href="#" class="button">Read more</a>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="dashmain news4 all_news box">       
-        <div class="newshead">
-            <div class="newsdate">
-              <span class="day">12</span>
-              <span class="month">Aug</span>
-              <span class="year">2016</span>
-            </div>
-            <ul class="menu-content">
-              <li>
-                <a href="#" class="far fa-bookmark fa-1.5x"></a>
-              </li>
-              <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
-              <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
-            </ul>
-        </div>
-        <div class="data">
-            <div class="content">
-              <span class="author">Jane Doe</span>
-              <h4 class="title"><a href="#">This Tiny Hospital Helps Injured Birds Survive </a></h4>
-              <p class="text">The Wild Bird Fund tends to thousands of birds with help from committed rehabbers...</p>
-              <a href="#" class="button">Read more</a>
-            </div>
-        </div>   
-    </div>
-
-    <div class="dashmain news6 all_news box">       
-        <div class="newshead">
-            <div class="newsdate">
-              <span class="day">12</span>
-              <span class="month">Aug</span>
-              <span class="year">2016</span>
-            </div>
-            <ul class="menu-content">
-              <li>
-                <a href="#" class="far fa-bookmark fa-1.5x"></a>
-              </li>
-              <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
-              <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
-            </ul>
-        </div>
-        <div class="data2">
-            <div class="content">
-              <span class="author">Jane Doe</span>
-              <h4 class="title"><a href="#">Everyone Called This Bird a Narcissist, But Really It's Just Misunderstood</a></h4>
-
-              <a href="#" class="button">Read more</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="dashmain news7 all_news box">   
-
-        <div class="newshead">
-            <div class="newsdate">
-              <span class="day">12</span>
-              <span class="month">Aug</span>
-              <span class="year">2016</span>
-            </div>
-            <ul class="menu-content">
-              <li>
-                <a href="#" class="far fa-bookmark fa-1.5x"></a>
-              </li>
-              <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
-              <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
-            </ul>
-        </div>
-        <div class="data2">
-            <div class="content">
-              <span class="author">Jane Doe</span>
-              <h4 class="title"><a href="#">Baseball for the Birds: Team Rallies Around an Endangered Species</a></h4>
-
-              <a href="#" class="button">Read more</a>
-            </div>
-        </div>
-    </div>
- 
-
-</div>
-</section>
-
-<!-- DIGITAL ADOPTION -->
-
-<section class="whitebird" id="sec3" >
-
-<div class="numbers" style=" height: 350px;  position: relative; ">
-    <div class="container-fluid running" style="position: absolute; z-index: 1; " >
-        <div class="row" style="text-align: center; color: white; width: 100%; font-weight: bold;">
-            <div class="col-6 col-md-6 col-lg-3" ><span class="value">1560</span><h3 >BIRDS SAVE</h3></div>
-            <div class="col-6 col-md-6 col-lg-3" ><span class="value">782</span><h3 >BIRDS SHELTER</h3></div>
-            <div class="col-6 col-md-6 col-lg-3" ><span class="value">658</span><h3 >BIRDS HERO</h3></div>
-            <div class="col-6 col-md-6 col-lg-3" ><span class="value">100</span><h3 >COUNTRIES</h3></div>
-        </div>
-    </div>
-
-    <div id="parallax3" class="parallaxParent">
-        <div style="background-image: url(img/sunset6.jpg); background-repeat: no-repeat; background-size: cover;" >  
-            
-        </div>
-    </div> 
-</div>
-    
-</section>
-
-<section class="digital_adoption para">
-
-    <div class="testimonial">
-        <div class="newsbutton testbutton">
-            <span class="section_title">Digital Adoption</span>
-            <div class="section_title2" >
-                <h6 class="section_slogan testbutton2">Just a few clicks<span class="section_slogan2">you can adopt a bird.</span></h6> 
-            </div>
-        </div>
-
-        <div class="container" style="margin-top:20px;">
-            <div class="flex-row">
-      <!-- left -->
-              <input name="ctl00$homeConservation$public_partctrl_homeConservation_1$hfPagePartId" type="hidden" id="ctl00_homeConservation_public_partctrl_homeConservation_1_hfPagePartId" value="330333" />
-              <div class="templatecontent flex-col-xs-12 flex-col-sm-5 flex-col-lg-4" >
-      
-                <div class="pictures icon">
-                  <div id="picture" class="one child"></div> 
-                </div>
-          
-                <i class="fas fa-quote-left fa-4x quote" style="margin-left: -100%; transform: rotate(20deg);"></i>
-      
-                <h5 id="caption" class="capone" style="width: auto;">I fell from the tree this summer during a hurricane. A nice hooman sent me to the shelter immediatly. After that, I recover quickly and now, I CAN FLY AGAIN!</h5>
-                 
-      <!-- right -->
-              </div>
-      
-              <div class="sw-public-page-part flex-col-xs-12 flex-col-sm-offset-1 flex-col-sm-6 flex-col-lg-7">
-      
-            <div id="ctl00_homeConservation_public_partctrl_homeConservation_2_matrixContent" class="matrix-content">
-                <div class="image-wrap">
-                <div class="image-fluid" >
-                    <div class="distortion t1 fluid"   rel="one" ></div>
-                </div>
-                <div class="image-fluid" >
-                    <div class="distortion2 t2 fluid"   rel="two" ></div>
-                </div>
-                <div class="image-fluid" >
-                    <div  class="distortion3 t3 fluid" rel="four" ></div>
-                </div>
-                <div class="image-fluid" >
-                    <div  class="distortion4 t4 fluid"  rel="four" ></div>
-                </div>
-              </div>
-            </div>
-              <input type="hidden" name="ctl00$homeConservation$public_partctrl_homeConservation_2$hfPagePartId" id="ctl00_homeConservation_public_partctrl_homeConservation_2_hfPagePartId" value="330334" />
-              </div>
+      <!-- carousel -->
+      <div class="glider-contain multiple" id="stage" data-name="Multiple Item">
+        <div class="glider" id="glider-resp">
+          <div class="glider-slide image menu ">
+            <div class="menuItem-content">
+              <a href="">
+                <image class="menuItem-img" src="img/latest_news2.png" alt="">
+              </a>
+              <div class="fontcolor centered menuItem-text fancy-link">Latest <br> News</div>
             </div>
           </div>
+          <div class="glider-slide image menu">
+            <div class="menuItem-content">
+              <a href=""><img class="menuItem-img" src="img/digital_adoption2.png" alt=""></a>
+              <div class="fontcolor centered menuItem-text fancy-link ">Digital <br> adoption</div>
+            </div>
+          </div>
+          <div class="glider-slide image menu">
+            <div class="menuItem-content">
+              <a href=""><img class="menuItem-img" src="img/get_involved.png" alt=""></a>
+              <div class="fontcolor centered menuItem-text fancy-link">Injured <br> birds</div>
+            </div>
+          </div>
+          <div class="glider-slide image menu">
+            <div class="menuItem-content">
+              <a href=""><img class="menuItem-img" src="img/injured_birds2.png" alt=""></a>
+              <div class="fontcolor centered menuItem-text fancy-link ">Get <br> involved</div>
+            </div>
+          </div>
+        </div>
 
-</section>
 
-<!-- ABOUT US -->
+        <button role="button" aria-label="Previous" class="glider-prev" id="glider-prev-resp"><i class="fa fa-chevron-left"></i></i></button>
+        <button role="button" aria-label="Next" class="glider-next" id="glider-next-resp"><i class="fa fa-chevron-right"></i></i></button>
+      </div>
 
-<h2 class="typping" id="sec4">
+
+    </div>
+  </section>
+
+
+
+
+  <section class="news " id="sec2">
+
+    <div class="newsbutton">
+      <span class="section_title">What's New</span>
+      <div class="section_title2">
+        <h6 class="section_slogan">Discover all news<span class="section_slogan2">and activities at shelter.</span></h6>
+      </div>
+    </div>
+    <div class="dashboard">
+
+
+
+      <div class="dashmain dashmain1 box">
+        <div class="newshead">
+          <div class="newsdate">
+            <span class="day">12</span>
+            <span class="month">Aug</span>
+            <span class="year">2016</span>
+          </div>
+          <ul class="menu-content">
+            <li>
+              <a href="#" class="far fa-bookmark fa-1.5x"></a>
+            </li>
+            <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
+            <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
+          </ul>
+        </div>
+        <div class="data">
+          <div class="content">
+            <span class="author">Jane Doe</span>
+            <h4 class="title"><a href="#">10 planet-friendly New Year’s resolutions</a></h4>
+            <p class="text">Start small by separating your trash by paper, plastic, metal! If you’re ready to...</p>
+            <a href="#" class="button">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashmain news2 all_news box">
+
+        <div class="newshead">
+          <div class="newsdate">
+            <span class="day">12</span>
+            <span class="month">Aug</span>
+            <span class="year">2016</span>
+          </div>
+          <ul class="menu-content">
+            <li>
+              <a href="#" class="far fa-bookmark fa-1.5x"></a>
+            </li>
+            <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
+            <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
+          </ul>
+        </div>
+        <div class="data">
+          <div class="content">
+            <span class="author">Jane Doe</span>
+            <h4 class="title"><a href="#">Are Birds Actually Government-Issued Drones?</a></h4>
+            <p class="text">Hatched by a 20-year-old college student, the Birds Aren’t Real movement has drawn...</p>
+            <a href="#" class="button">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashmain news3 all_news box">
+
+        <div class="newshead">
+          <div class="newsdate">
+            <span class="day">12</span>
+            <span class="month">Aug</span>
+            <span class="year">2016</span>
+          </div>
+          <ul class="menu-content">
+            <li>
+              <a href="#" class="far fa-bookmark fa-1.5x"></a>
+            </li>
+            <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
+            <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
+          </ul>
+        </div>
+        <div class="data">
+          <div class="content">
+            <span class="author">Jane Doe</span>
+            <h4 class="title"><a href="#">Baseball for the Birds: Team Rallies Around an Endangered Species</a></h4>
+            <p class="text">Hatched by a 20-year-old college student, the Birds Aren’t Real movement has drawn...</p>
+            <a href="#" class="button">Read more</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="dashmain news4 all_news box">
+        <div class="newshead">
+          <div class="newsdate">
+            <span class="day">12</span>
+            <span class="month">Aug</span>
+            <span class="year">2016</span>
+          </div>
+          <ul class="menu-content">
+            <li>
+              <a href="#" class="far fa-bookmark fa-1.5x"></a>
+            </li>
+            <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
+            <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
+          </ul>
+        </div>
+        <div class="data">
+          <div class="content">
+            <span class="author">Jane Doe</span>
+            <h4 class="title"><a href="#">This Tiny Hospital Helps Injured Birds Survive </a></h4>
+            <p class="text">The Wild Bird Fund tends to thousands of birds with help from committed rehabbers...</p>
+            <a href="#" class="button">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashmain news6 all_news box">
+        <div class="newshead">
+          <div class="newsdate">
+            <span class="day">12</span>
+            <span class="month">Aug</span>
+            <span class="year">2016</span>
+          </div>
+          <ul class="menu-content">
+            <li>
+              <a href="#" class="far fa-bookmark fa-1.5x"></a>
+            </li>
+            <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
+            <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
+          </ul>
+        </div>
+        <div class="data2">
+          <div class="content">
+            <span class="author">Jane Doe</span>
+            <h4 class="title"><a href="#">Everyone Called This Bird a Narcissist, But Really It's Just Misunderstood</a></h4>
+
+            <a href="#" class="button">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashmain news7 all_news box">
+
+        <div class="newshead">
+          <div class="newsdate">
+            <span class="day">12</span>
+            <span class="month">Aug</span>
+            <span class="year">2016</span>
+          </div>
+          <ul class="menu-content">
+            <li>
+              <a href="#" class="far fa-bookmark fa-1.5x"></a>
+            </li>
+            <li><a href="#" class="far fa-heart fa-1.5x"><span>18</span></a></li>
+            <li><a href="#" class="far fa-comment fa-1.5x"><span>3</span></a></li>
+          </ul>
+        </div>
+        <div class="data2">
+          <div class="content">
+            <span class="author">Jane Doe</span>
+            <h4 class="title"><a href="#">Baseball for the Birds: Team Rallies Around an Endangered Species</a></h4>
+
+            <a href="#" class="button">Read more</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- DIGITAL ADOPTION -->
+
+  <section class="whitebird" id="sec3">
+
+    <div class="numbers" style=" height: 350px;  position: relative; ">
+      <div class="container-fluid running" style="position: absolute; z-index: 1; ">
+        <div class="row" style="text-align: center; color: white; width: 100%; font-weight: bold;">
+          <div class="col-6 col-md-6 col-lg-3"><span class="value">1560</span>
+            <h3>BIRDS SAVE</h3>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3"><span class="value">782</span>
+            <h3>BIRDS SHELTER</h3>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3"><span class="value">658</span>
+            <h3>BIRDS HERO</h3>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3"><span class="value">100</span>
+            <h3>COUNTRIES</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="parallax3" class="parallaxParent">
+        <div style="background-image: url(img/sunset6.jpg); background-repeat: no-repeat; background-size: cover;">
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="digital_adoption para">
+
+    <div class="testimonial">
+      <div class="newsbutton testbutton">
+        <span class="section_title">Digital Adoption</span>
+        <div class="section_title2">
+          <h6 class="section_slogan testbutton2">Just a few clicks<span class="section_slogan2">you can adopt a bird.</span></h6>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top:20px;">
+        <div class="flex-row">
+          <!-- left -->
+          <input name="ctl00$homeConservation$public_partctrl_homeConservation_1$hfPagePartId" type="hidden" id="ctl00_homeConservation_public_partctrl_homeConservation_1_hfPagePartId" value="330333" />
+          <div class="templatecontent flex-col-xs-12 flex-col-sm-5 flex-col-lg-4">
+
+            <div class="pictures icon">
+              <div id="picture" class="one child"></div>
+            </div>
+
+            <i class="fas fa-quote-left fa-4x quote" style="margin-left: -100%; transform: rotate(20deg);"></i>
+
+            <h5 id="caption" class="capone" style="width: auto;">I fell from the tree this summer during a hurricane. A nice hooman sent me to the shelter immediatly. After that, I recover quickly and now, I CAN FLY AGAIN!</h5>
+
+            <!-- right -->
+          </div>
+
+          <div class="sw-public-page-part flex-col-xs-12 flex-col-sm-offset-1 flex-col-sm-6 flex-col-lg-7">
+
+            <div id="ctl00_homeConservation_public_partctrl_homeConservation_2_matrixContent" class="matrix-content">
+              <div class="image-wrap">
+                <div class="image-fluid">
+                  <div class="distortion t1 fluid" rel="one"></div>
+                </div>
+                <div class="image-fluid">
+                  <div class="distortion2 t2 fluid" rel="two"></div>
+                </div>
+                <div class="image-fluid">
+                  <div class="distortion3 t3 fluid" rel="four"></div>
+                </div>
+                <div class="image-fluid">
+                  <div class="distortion4 t4 fluid" rel="four"></div>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" name="ctl00$homeConservation$public_partctrl_homeConservation_2$hfPagePartId" id="ctl00_homeConservation_public_partctrl_homeConservation_2_hfPagePartId" value="330334" />
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- ABOUT US -->
+
+  <h2 class="typping" id="sec4">
     Together We Are
     <br>
     <a href="" class="typewrite writting" data-period="1500" data-type='[ "Saving Species.", "Sharing Knowledge.", "Pioneering Care.", "Funding Forever." ]'>
       <span class="wrap"></span>
     </a>
-</h2>
-  
+  </h2>
 
 
-<section class="about_us " style=" color: black">
 
-  <div class="intro-content" style="padding-top: 90px;">
-    <div class="intro-wrap z3" >
+  <section class="about_us " style=" color: black">
+
+    <div class="intro-content" style="padding-top: 90px;">
+      <div class="intro-wrap z3">
 
         <div class="intro-text">
-            <div style="text-align: center;" class="parallax-text-wrap">
-                <span  class="parallax-text" data-direction="vertical">Meet</span>
-                <h3 style="font-weight: 700;position: relative;">
-                  <span >Wild</span> <span>Bird</span> 
-                  <span>Shelter</span> 
-                </h3>  
-            </div>
-            <div style="margin-top: 40px;text-align: justify;text-indent: 50px;letter-spacing: 1px; color: rgb(255, 255, 255);" class="meet2">The Wild Bird Shelter protects birds and the places they need, today and tomorrow, throughout the country using science, advocacy, education, and on-the-ground conservation.</div>
-           
+          <div style="text-align: center;" class="parallax-text-wrap">
+            <span class="parallax-text" data-direction="vertical">Meet</span>
+            <h3 style="font-weight: 700;position: relative;">
+              <span>Wild</span> <span>Bird</span>
+              <span>Shelter</span>
+            </h3>
+          </div>
+          <div style="margin-top: 40px;text-align: justify;text-indent: 50px;letter-spacing: 1px; color: rgb(255, 255, 255);" class="meet2">The Wild Bird Shelter protects birds and the places they need, today and tomorrow, throughout the country
+            using science, advocacy, education, and on-the-ground conservation.</div>
+
         </div>
-        <div class="intro-img"  >
-            <div class="img-pos">
-                <img class="img-nature pic3" src="img/Education-FI.jpg" alt=""  >
-            </div> 
+        <div class="intro-img">
+          <div class="img-pos">
+            <img class="img-nature pic3" src="img/Education-FI.jpg" alt="">
+          </div>
         </div>
-        
+
+      </div>
     </div>
-</div>
 
 
- 
-
-</section>
 
 
-<section class="mission " >
+  </section>
+
+
+  <section class="mission ">
     <div class="newsbutton missionbutton">
-        <span class="section_title">Our Mission</span>
-        <div class="section_title2">
-            <h6 class="section_slogan ">Together we will<span class="section_slogan2">turn the tide.</span></h6> 
-        </div>
+      <span class="section_title">Our Mission</span>
+      <div class="section_title2">
+        <h6 class="section_slogan ">Together we will<span class="section_slogan2">turn the tide.</span></h6>
+      </div>
     </div>
-</section>
+  </section>
 
 
 
 
-<div class="container-fluid">
-<div class="row">
-    <div class=" col-md-4 zoom" style=" height: 250px;"><div class="m1 mm">Protecting and Reviving</div></div>
-    <div class=" col-md-4 zoom" style=" height: 250px;"><div class="m2 mm">Educating and Researching</div> </div>
-    <div class=" col-md-4 zoom" style=" height: 250px;"><div class="m3 mm">Ecosystem sustainable</div> </div>
-</div>
-</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" col-md-4 zoom" style=" height: 250px;">
+        <div class="m1 mm">Protecting and Reviving</div>
+      </div>
+      <div class=" col-md-4 zoom" style=" height: 250px;">
+        <div class="m2 mm">Educating and Researching</div>
+      </div>
+      <div class=" col-md-4 zoom" style=" height: 250px;">
+        <div class="m3 mm">Ecosystem sustainable</div>
+      </div>
+    </div>
+  </div>
 
 
-<section class="contact_us" >
-   
-    <div class="newsletter" >
+  <section class="contact_us">
+
+    <div class="newsletter">
       <i class="fas fa-kiwi-bird fa-5x kiwi"></i>
       <div class="subscribezero">
-          <h6 class="section_slogan subscribe">Newsletter<span class="section_slogan2 subscribe2">Stay updated</span></h6>
+        <h6 class="section_slogan subscribe">Newsletter<span class="section_slogan2 subscribe2">Stay updated</span></h6>
       </div>
       <div class="email"><input type="text" placeholder="Email address" name="mail" required　></div>
       <div class="button-submit"><button class="button-submit2">Submit</button></div>
     </div>
 
-  
-    
+
+
     <div class="contact"><span>Contact
         <br>660 Broklyn Street, 88 New York
         <br>needhelp@oxpitan.com
-        <br>666 888 0000</span><div class="rightreserve"> © 2020 Wild Bird Shelter | All Rights Reserved.</div>
+        <br>666 888 0000</span>
+      <div class="rightreserve"> © 2020 Wild Bird Shelter | All Rights Reserved.</div>
     </div>
     <ul class="social-icons list-inline" style="margin-bottom: 0; padding-bottom: 10px;">
       <li><a href="" class="a"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="" class="a"><i class="fab fa-twitter"></i></a></li>
       <li><a href="" class="a"><i class="fab fa-instagram"></i></a></li>
-  </ul> 
-</section>
+    </ul>
+  </section>
 
 
 
 
-</div>
+  </div>
 
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>  
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js" integrity="sha256-Wua0LsQkGDEeIkbmBNjj9wcThJh5uCD6R8+5YQhXveQ=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-<script src="js/hover.js" crossorigin="anonymous"></script>
-<script src="js/glider.js"></script>
-<script src="js/test.js"></script>
-<script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js" integrity="sha256-Wua0LsQkGDEeIkbmBNjj9wcThJh5uCD6R8+5YQhXveQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="js/jquery.min.js"></script>
 
-</div>
+  <script src="js/hover.js" crossorigin="anonymous"></script>
+  <script src="js/glider.js"></script>
+  <script src="js/test.js"></script>
+  <script src="js/index.js"></script>
+
+  </div>
 
 
 
