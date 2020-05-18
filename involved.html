@@ -5,20 +5,12 @@
     <meta charset="utf-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="css/hamburger.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/involved.css">
 
 
@@ -72,8 +64,8 @@
                             <li style="text-align:center;"><a class="" href="activity_indoor.html">News Room</a></li>
                         </ul>
                     </li>
-                    <li ><a class="nav-link nav-size" href="digital_adoption_v2.html">Digital Adoption</a></li>
-                    <li ><a class="nav-link nav-size" href="injured_bird_v2.html">Injured Birds</a></li>
+                    <li ><a class="nav-link nav-size" href="digital_adoption.html">Digital Adoption</a></li>
+                    <li ><a class="nav-link nav-size" href="injured_bird.html">Injured Birds</a></li>
                     <li ><a class="nav-link nav-size" href="involved.html">Get Involved</a></li>
                     
                   
@@ -293,144 +285,7 @@
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="js/involved.js"></script>
 
-    <script>
-
-        $(window).scroll(function() {
-        var scroll = $(window).scrollTop()
-
-          if (scroll < $(window).height()) {
-            $(".forest").css({
-              transform: 'translate3d(0%, -' + (scroll / 100) + '%, 0) scale(' + (100 + scroll /10) / 100 + ')'
-            });
-          }
-        });
-
-    </script>
-    
-    <script>
-        function scrollAppear(){
-            var introTexts = document.querySelectorAll('.intro-text');
-           
-
-            for (var i=0; i < introTexts.length; i++){
-                var introPosition = introTexts[i].getBoundingClientRect().top;
-                var screenPos = window.innerHeight / 1.3;
-                
-            if(introPosition < screenPos){
-                introTexts[i].classList.add('intro-appear');
-                
-            }
-
-            }
-        }
-
-        window.addEventListener('scroll',scrollAppear);
-        
-    </script>
-
-
-<script>
-    function imgAppear(){
-        var introTexts = document.querySelectorAll('.img-nature, .img-nature2');
- 
-
-        for (var i=0; i < introTexts.length; i++){
-            var introPosition = introTexts[i].getBoundingClientRect().top;
-            var screenPos = window.innerHeight / 1.3;
-            
-        if(introPosition < screenPos){
-            introTexts[i].classList.add('img-appear');
-        }  
-        }
-        }
-    
-    window.addEventListener('scroll',imgAppear);
-    
-</script>
-
-<script>
-
-    var $ac = document.querySelector('.z1');
-    var $bc = document.querySelector('.z2');
-    var $cc = document.querySelector('.z3');
-    $ac.addEventListener('mouseover', function() {
-    TweenMax.to("#turbulence", 2, {
-        attr: { "baseFrequency": 0.01 },
-        repeat: -1,
-        yoyo: true
-    });
-    });
-
-    $ac.addEventListener('mouseout', function() {
-    TweenMax.to("#turbulence", 2, {
-        attr: { "baseFrequency": 0 },
-        repeat: 0,
-        yoyo: false
-    });
-    });
-
-    $bc.addEventListener('mouseover', function() {
-    TweenMax.to("#turbulence2", 2, {
-        attr: { "baseFrequency": 0.01 },
-        repeat: -1,
-        yoyo: true
-    });
-    });
-
-    $bc.addEventListener('mouseout', function() {
-    TweenMax.to("#turbulence2", 2, {
-        attr: { "baseFrequency": 0 },
-        repeat: 0,
-        yoyo: false
-    });
-    });
-
-    $cc.addEventListener('mouseover', function() {
-    TweenMax.to("#turbulence3", 2, {
-        attr: { "baseFrequency": 0.01 },
-        repeat: -1,
-        yoyo: true
-    });
-    });
-
-    $cc.addEventListener('mouseout', function() {
-    TweenMax.to("#turbulence3", 2, {
-        attr: { "baseFrequency": 0 },
-        repeat: 0,
-        yoyo: false
-    });
-    });
-
-</script>
-
-
-
-
-
-
-<script>
-    var parallax = document.getElementById('para-img');
-    window.addEventListener('scroll',function(){
-        let offset = window.pageYOffset;
-        parallax.style.backgroundPositionY = (-offset * 0.2)+200+ "px";
-    })
-</script>
-
-
-<SCript>
-    $(function(){
-  $("a.tab").on("click", function(e){
-    e.preventDefault();
-    
-  
-    $(this).closest("ul").find("a.tab").removeClass("-on");
-    $(this).addClass("-on");
-    
-    $("div.tab").removeClass("-on");
-    $("div.tab." + $(this).attr("data-target")).addClass("-on");
-  });
-});
-</SCript>
 </body>
 </html>

@@ -1,5 +1,5 @@
 
- ///////MOUSEMOVE/////////
+ /***MOUSEMOVE***/
  document.addEventListener('mousemove',
      function parallax(e) {
          this.querySelectorAll('.layer').forEach(layer => {

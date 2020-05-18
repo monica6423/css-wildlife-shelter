@@ -9,27 +9,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/hamburger.css">
-    <link rel="stylesheet" href="css/jqueryui.css">
     <link rel="stylesheet" href="css/datetimepicker.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/activity.css">
-    <link rel="stylesheet" href="login.css">
-    <script>
-    $( function() {
-      $( "#slider-range" ).slider({
-        range: true,
-        min: 0,
-        max: 100,
-        values: [ 50, 78 ],
-        slide: function( event, ui ) {
-          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        }
-      });
-      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-    } );
-    </script>
+    <link rel="stylesheet" href="css/login.css">
 
 
     <title> Activity</title>
@@ -85,8 +69,8 @@
                         <li style="text-align:center;display: block;"><a class="" href="activity_indoor.html">News Room</a></li>
                     </ul>
                 </li>
-                <li ><a class="nav-link nav-size" href="digital_adoption_v2.html">Digital Adoption</a></li>
-                <li ><a class="nav-link nav-size" href="injured_bird_v2.html">Injured Birds</a></li>
+                <li ><a class="nav-link nav-size" href="digital_adoption.html">Digital Adoption</a></li>
+                <li ><a class="nav-link nav-size" href="injured_bird.html">Injured Birds</a></li>
                 <li ><a class="nav-link nav-size" href="involved.html">Get Involved</a></li>
                 
               
@@ -616,8 +600,6 @@
         </div>
 
         <!-- -------------------------------------------section_choice --------------------------------------->
-        <!-- -------------------------------------------section_choice --------------------------------------->
-        <!-- -------------------------------------------section_choice --------------------------------------->
         
             <h4 class="tags t1 accordion"  data-number="1">Filter by fees<i class="fas fa-chevron-up filter-down1 " ></i></h4>
             
@@ -693,7 +675,6 @@
                 <div class="cale-wrap">
                     <div id="calendar" class="calendar">
                         <input size="16" type="mm" id="input" value="2020-03-10" readonly="" class="form-control"> 
-                        <!-- <span  id="input" value="2012-06-15" >pick a date..</span> -->
                     </div>
                 </div>
             </div>
@@ -722,7 +703,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/calendar.js"></script>
     <script src="js/activity.js"></script>
-    <script src="login.js"></script>
+    <script src="js/login.js"></script>
     
 
     
