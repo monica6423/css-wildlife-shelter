@@ -1,0 +1,231 @@
+
+.forest{
+    height: 100%;
+    width: 100%;
+    
+}
+
+/********************/
+.logo{
+    margin-left: 1rem;
+    margin-top: 0rem;
+}
+
+.center-content{
+    text-align: center;
+}
+
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-end;
+  }
+
+
+.right{
+    margin-left: auto;
+}
+
+
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+
+.droppersonal{
+    padding:0;
+    margin: 0;
+}
+
+
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color:white;
+    text-decoration: none;
+    background-color: #F3973A;
+}
+  
+
+
+
+
+.nav-size{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 1.5rem;
+
+}
+.sidenav-size{
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    padding: 0.4rem 0.5rem;
+}
+
+
+.nav-link{
+    padding-top: 0;
+}
+
+/*********************/
+
+
+.da-color{
+    color: white;
+}
+
+.topic_font{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;  
+    padding-top: 2rem;
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+.topic_font2{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.arrow{
+    border: 2px solid black;
+    margin:15px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/*****************************/
+.header{
+    border: 1px solid blue;
+}
+.text{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 600px;
+    height:300px;
+    margin: 100px auto;
+    border: 1px solid red;
+   
+}
+
+
+.testimonial{
+    position: absolute;
+    max-width: 100px;
+    z-index:1;
+}
+
+.img1{
+    position: absolute;
+    top:55%;
+    left:70%;
+    animation: circle1 50s linear;
+}
+.img2{
+    position: absolute;
+    top:30%;
+    left:10%;
+    animation: circle2 50s linear;
+}
+.img3{
+    position: absolute;
+    top:15%;
+    left:30%;
+    animation: circle1 50s linear;
+}
+.img4{
+    position: absolute;
+    top:40%;
+    left:25%;
+    animation: circle2 50s linear;
+}
+.img5{
+    position: absolute;
+    top:13%;
+    left:15%;
+    animation: circle1 50s linear;
+}
+.img6{
+    position: absolute;
+    top:70%;
+    left:35%;
+    animation: circle2 50s linear;
+}
+.img7{
+    position: absolute;
+    top:55%;
+    left:90%;
+    animation: circle1 50s linear;
+}
+
+.img8{
+    position: absolute;
+    top:73%;
+    left:80%;
+    animation: circle2 50s linear;
+}
+.img9{
+    position: absolute;
+    top:10%;
+    left:80%;
+    animation: circle1 50s linear;
+}
+.img9{
+    position: absolute;
+    top:20%;
+    left:90%;
+    animation: circle2 50s linear;
+}
+.img10{
+    position: absolute;
+    top:16%;
+    left:50%;
+    animation: circle1 50s linear;
+}
+.img11{
+    position: absolute;
+    top:30%;
+    left:75%;
+    animation: circle2 50s linear;
+}
+.img12{
+    position: absolute;
+    top:66%;
+    left:10%;
+    animation: circle1 50s linear;
+}
+@keyframes circle1{
+    from{
+        transform:rotate(0deg)
+                  translate(-30px)
+                  rotate(0deg)
+    }
+    to{
+        transform:rotate(360deg)
+                  translate(-30px)
+                  rotate(-360deg)
+    }
+}
+
+@keyframes circle2{
+    from{
+        transform:rotate(360deg)
+                  translate(-50px)
+                  rotate(-360deg)
+    }
+    to{
+        transform:rotate(-360deg)
+                  translate(50px)
+                  rotate(360deg)
+    }
+}

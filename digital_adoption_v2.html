@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/wild bird logo_text.svg" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/adoption_v2.css">
+    
+    <title>Digital Adoption</title>
+</head>
+<body>
+
+
+        <section class="bird " >
+
+            <div class="chatwrapper">
+
+                <div style="padding:10px 0;" class="chat-open">
+                    <h4 style="margin:10px 0;">Ask anything<i class="fas fa-times"></i></h4>
+                    <i style="margin-bottom: 10px; " class="fas fa-user-friends" ></i>
+                    <h5 style="margin-bottom: 10px;">Welcome</h5>
+                    <input 
+                    onChange={handleChange}
+                    type = "text"
+                    placeholder = "Username"/>
+            
+                    <input 
+                    onChange={handleChange}
+                    type = "text"
+                    placeholder = "Email"/>
+                    <button class="start">Start the chat</button>
+                </div>
+                <div class="chat btn1" id="toggle-sliding">
+                
+                    
+                    <i class="fas fa-comment-alt fa-2x" style="color: #573321;"><div class="dot1"></div><div class="dot2"></div><div class="dot3"></div></i>
+                    
+                </div>
+
+            </div>
+            
+            <div class="">
+ 
+                <nav class="navbar navbar-expand-lg navbar-light flex-container "  style="z-index: 5;">
+            
+                
+                <a class="navbar-brand logo" href="home.html">
+                    <img src="img/wild bird logo_text.png" width="125" alt="">
+                </a>
+                    <!-- main menu -->
+                    <input type="checkbox" class="menu-btn" id="menu-btn" >
+                    <label for="menu-btn" class="menu-icon" style="z-index: 5;" >
+                      <span class="menu-icon_line"></span>
+                    </label>
+                    
+                    <ul class="navbar-nav"  >
+                        <li class="dropdown" ><a class="nav-link nav-size dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Latest Activities</a>
+                            <ul class="dropdown-menu dropdown-warning droppersonal" aria-labelledby="navbarDropdown1">
+                                <li style="text-align:center;display: block;"><a class="" href="activity_indoor.html">Indoor</a></li>
+                                <li style="text-align:center;display: block;"><a class="" href="activity_indoor.html">Outdoor</a></li>
+                                <li style="text-align:center;display: block;"><a class="" href="activity_indoor.html">News Room</a></li>
+                            </ul>
+                        </li>
+                        <li ><a class="nav-link nav-size" href="digital_adoption_v2.html">Digital Adoption</a></li>
+                        <li ><a class="nav-link nav-size" href="injured_bird_v2.html">Injured Birds</a></li>
+                        <li ><a class="nav-link nav-size" href="involved.html">Get Involved</a></li>
+                        
+                      
+                    </ul>
+            
+                    <!-- sub menu -->
+                    <ul class="navbar-nav2" style="color: rgba(0,0,0,.5); font-size: 12px;">
+                         <li>
+                             <div href="" class="nav-link" ><i class="fas  fa-sign-in-alt fa-1.5x "></i><span class="sidenav-size"  id="spanLogin">Log in/ Register</span></div>
+                         </li>
+                     </ul>   
+             
+                </nav>
+            
+            </div>
+
+        </section>
+
+
+        <section class="landing" style="position: relative;">
+
+            <div class="leftpanel"  style="position: relative;">
+                <h1 class="ml7" id="title">
+                    <span class="text-wrapper">
+                        <span class="letters">Saving Birds For Today</span>
+                    </span>
+                </h1>
+
+            </div>
+
+    
+
+            <div class="rightpanel">
+                <div class="panel">
+                    <div class="panelwrapper" style=" vertical-align: middle; " >
+                        
+                        <p class="p">Thousands of bird populations and entire species are hanging on by their wingtips.</p>
+                        <div class="panelwrapper" id="scene">
+                            <div class=" layer" style=" width: 80%; height: 100%; z-index: 10;;" data-depth="0.8"><img  class="leaf  l1 img-anima" id="mousemove2" data-speed="2" src="img/leaf4.png" alt="" ></div>
+                            <div class=" layer" style=" width: 80%; height: 100%; z-index: 10;" data-depth="0.3" ><img class="leaf l2 img-anima" id="mousemove2" data-speed="2" src="img/leaf5.png" alt=""></div>
+                            <div class=" layer" style=" width: 80%; height: 100%; z-index: 10;" data-depth="0.4" ><img class="leaf l3 img-anima" id="mousemove2" data-speed="4" src="img/leaf2.png" alt=""></div>
+                           
+                            <div class=" layer" style=" width: 80%; height: 100%; z-index: 10;" data-depth="0.5" ><img class="leaf l5 img-anima" id="mousemove2"  data-speed="5" src="img/leaf2.png" alt=""></div>
+                            <div class=" layer" style=" width: 80%; height: 100%; z-index: 10;" data-depth="0.5" ><img class="leaf l6 img-anima" id="mousemove2" data-speed="6" src="img/leaf4.png" alt=""></div>
+                            <div class=" layer" style=" width: 80%; height: 100%; z-index: 10;" data-depth="0.5" ><img class="leaf l7 img-anima" id="mousemove2" data-speed="6" src="img/leaf5.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="box" >
+                        <ul class="box-area">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                           
+                        </ul>
+                        
+                    </div>
+                   
+                    <img class="birdpic layer" data-speed="-3" src="img/nobg_wallbird3.png" id="mousemove" alt="">
+
+
+                </div>    
+                
+            </div>
+
+        </section>
+
+
+ <!-- Features -->
+
+        <section class="white-section features" >
+
+            <div class="container-fluid">
+
+            <div class="row">
+                <div class="feature-box col-lg-4">
+                <i class="icon fab fa-earlybirds fa-6x"></i>
+                <h3 class="feature-title">Bird Online</h3>
+                <p class="feature-des">Find a bird you want to adopt online.</p>
+                </div>
+                
+                <div class="feature-box col-lg-4">
+                <i class="icon fas fa-check-circle fa-6x"></i>
+                <h3 class="feature-title">Easy to Use</h3>
+                <p class="feature-des">connect your digital wallet easily.</p>
+                </div>
+
+                <div class="feature-box col-lg-4">
+                <i class="icon fas fa-people-carry fa-6x"></i>
+                <h3 class="feature-title">Big Community</h3>
+                <p class="feature-des">Tons of thousands of bird heros.</p>
+                </div>
+            </div>
+            
+            </div>
+        </section>
+
+
+<!-- Testimonials -->
+
+        <section class="colored-section" id="testimonials">
+        
+            <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active container-fluid">
+                  <h2 class="testimonial-text">Digital adoption makes everything work well and smoothly!</h2>
+                  <img class="testimonial-image" src="img/r2.png" alt="dog-profile">
+                  <em>Patrick, Taipei</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                  <h2 class="testimonial-text">Internet of Birds is such a brilliant idea! Love you guys!</h2>
+                  <img class="testimonial-image" src="img/ij15.jpg" alt="lady-profile">
+                  <em>Jason, Tokyo</em>
+                </div>
+              </div>
+              
+              <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+        
+        </section>
+
+
+        <section class="bird-wall">
+            <h2 class="viewbird">Birds Available for Adoption</h2>
+
+            <div class="container-masonry">
+                <div class="grid">
+                    <div class="grid-col grid-col--1"></div>
+                    <div class="grid-col grid-col--2"></div>
+                    <div class="grid-col grid-col--3"></div>
+                    <div class="grid-col grid-col--4"></div>
+                
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij1.png" alt="">
+                    </div>
+                    
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij2.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij3.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij4.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij5.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij6.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij6.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/a9.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij4.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/a10.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij13.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij4.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij5.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij15.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij6.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/a9.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij3.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij2.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg"src="img/ij1.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij5.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij6.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij6.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/a9.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij4.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/a10.png" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij13.jpg" alt="">
+                    </div>
+                    <div class="grid-item">
+                        <div class="content">
+                            <h4 class="product-line">Marry</h4>
+                            <h5 class="product-adopt">Adopt</h5>
+                            <i class="far fa-heart fa-1.5x"></i>
+                        </div>
+                        <img class="gridimg" src="img/ij4.png" alt="">
+                    </div>
+
+                
+                
+                </div>
+                </div>
+                
+                
+ 
+                
+        </section>
+
+
+
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+        <script src="js/adoption.js"></script>
+        
+        
+
+
+
+
+</body>
+
+</html>

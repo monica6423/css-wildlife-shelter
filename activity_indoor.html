@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/wild bird logo_text.svg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/jqueryui.css">
+    <link rel="stylesheet" href="css/datetimepicker.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="stylesheet" href="login.css">
+    <script>
+    $( function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 100,
+        values: [ 50, 78 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        }
+      });
+      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    } );
+    </script>
+
+
+    <title> Activity</title>
+</head>
+<body>
+
+<!-- 燈箱：登入 -->
+<div id="lightBox" style="display: none;" style="z-index: 1000;">
+    <form cellspacing="0" id="tableLogin"  style="z-index: 1000;">
+    <input type="text" name="memId" id="memId" placeholder = "Username">
+    <input type="password" name="memPsw" id="memPsw" placeholder = "Password">
+    
+    <div>
+        <input type="button" id="btnLogin" value="Login" >
+        <input type="button" id="btnLoginCancel" value="Cancel">
+    </div>
+         
+    <div class="forgetpw"><h5 style="color: white; font-size: 12px;">Don't have an account?<a href="" style="color: orange; font-size: 12px;"> Sign up</a></h5></div>
+    </form>
+</div>
+  
+
+<section class="forest">
+
+    <div class="event lax"  data-lax-translate-y="0 1, 400 260" alt=""><h1 class="upcoming">Upcoming Events</h1></div>
+    <div class="trees lax"  data-lax-translate-y="0 1, 400 240" alt=""></div>
+    <div class="pine lax" data-lax-translate-y="0 1, 400 200"></div>
+    <div class="mountains "   alt=""></div>
+   
+
+
+    <div class="">
+ 
+        <nav class="navbar navbar-expand-lg navbar-light flex-container " >
+    
+        
+        <a class="navbar-brand " href="home.html">
+            <img src="img/wild bird logo_text.png" width="125" alt="">
+        </a>
+            <!-- main menu -->
+            <input type="checkbox" class="menu-btn" id="menu-btn" >
+            <label for="menu-btn" class="menu-icon" style="z-index: 5; " >
+              <span class="menu-icon_line" id="menu-icon_line"></span>
+            </label>
+            
+            <div class="mobile-filter" id="mobile-filter">Filters <i style="position:absolute; right:10px; top:10px" class="fas fa-filter"></i>
+            </div>
+            <ul class="navbar-nav " id="navbar-nav" >
+                <li class="dropdown" ><a class="nav-link nav-size dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Latest Activities</a>
+                    <ul class="dropdown-menu dropdown-warning droppersonal" aria-labelledby="navbarDropdown1">
+                        <li style="text-align:center;display: block;"><a class="" href="activity_indoor.html">Indoor</a></li>
+                        <li style="text-align:center;display: block;"><a class="" href="activity_indoor.html">Outdoor</a></li>
+                        <li style="text-align:center;display: block;"><a class="" href="activity_indoor.html">News Room</a></li>
+                    </ul>
+                </li>
+                <li ><a class="nav-link nav-size" href="digital_adoption_v2.html">Digital Adoption</a></li>
+                <li ><a class="nav-link nav-size" href="injured_bird_v2.html">Injured Birds</a></li>
+                <li ><a class="nav-link nav-size" href="involved.html">Get Involved</a></li>
+                
+              
+            </ul>
+    
+            <!-- sub menu -->
+            <ul class="navbar-nav2" style="color: rgba(0,0,0,.5); font-size: 12px;">
+                 <li>
+                     <div href="" class="nav-link" ><i class="fas  fa-sign-in-alt fa-1.5x "></i><span class="sidenav-size"  id="spanLogin">Log in/ Register</span></div>
+                 </li>
+             </ul>   
+     
+        </nav>
+    
+    </div>
+
+</section>
+
+
+
+
+
+<div class="main-container">
+    <div class="cards-container newsitem">
+
+        <div class="card item in" >
+            <div class="ribbon-label">20 seats</div>
+            <div class="cardimg"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Taipei</div>
+                <div class="product_title">Bird Watching Amazing</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€20</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label2">5 seats left!</div>
+            <div class="cardimg2"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Helsinki</div>
+                <div class="product_title">How to Save Birds</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 08</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item news" >
+            <div class="ribbon-label">25 seats</div>
+            <div class="cardimg3"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Tokyo</div>
+                <div class="product_title">A Bird Lesson</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€30</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item news">
+            <div class="ribbon-label">10 seats</div>
+            <div class="cardimg4"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Sydney</div>
+                <div class="product_title">Save the World</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€50</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">8 seats</div>
+            <div class="cardimg5"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">London</div>
+                <div class="product_title">See the Lil Birds</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€50</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in">
+            <div class="ribbon-label">10 seats</div>
+            <div class="cardimg6"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Amsterdam</div>
+                <div class="product_title">Bird Watching Society</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€70</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in">
+            <div class="ribbon-label2">2 seats left!</div>
+            <div class="cardimg7"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Oulu</div>
+                <div class="product_title">Basic Understanding</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 08</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in">
+            <div class="ribbon-label">11 seats</div>
+            <div class="cardimg8"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Taipei</div>
+                <div class="product_title">Eco System of the Natural</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 7</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item news">
+            <div class="ribbon-label">11 seats</div>
+            <div class="cardimg9"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Helsinki</div>
+                <div class="product_title">Are Chicken Bird</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 22</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">14 seats</div>
+            <div class="cardimg10"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Tokyo</div>
+                <div class="product_title">Eagle and His Food</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 27</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€50</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">11 seats</div>
+            <div class="cardimg11"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Sydney</div>
+                <div class="product_title">Read the Sign in Natural</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 27</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">18 seats</div>
+            <div class="cardimg12"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">London</div>
+                <div class="product_title">Eco System of the Natural</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 7</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in" >
+            <div class="ribbon-label">20 seats</div>
+            <div class="cardimg"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Taipei</div>
+                <div class="product_title">Bird Watching Amazing</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€20</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label2">5 seats left!</div>
+            <div class="cardimg2"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Helsinki</div>
+                <div class="product_title">How to Save Birds</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 08</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item news" >
+            <div class="ribbon-label">25 seats</div>
+            <div class="cardimg3"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Tokyo</div>
+                <div class="product_title">A Bird Lesson</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€30</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item news">
+            <div class="ribbon-label">10 seats</div>
+            <div class="cardimg4"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Sydney</div>
+                <div class="product_title">Save the World</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€50</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">8 seats</div>
+            <div class="cardimg5"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">London</div>
+                <div class="product_title">See the Lil Birds</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€50</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in">
+            <div class="ribbon-label">10 seats</div>
+            <div class="cardimg6"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Amsterdam</div>
+                <div class="product_title">Bird Watching Society</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€70</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in">
+            <div class="ribbon-label2">2 seats left!</div>
+            <div class="cardimg7"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Oulu</div>
+                <div class="product_title">Basic Understanding</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 08</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in">
+            <div class="ribbon-label">11 seats</div>
+            <div class="cardimg8"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Taipei</div>
+                <div class="product_title">Eco System of the Natural</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 7</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item news">
+            <div class="ribbon-label">11 seats</div>
+            <div class="cardimg9"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Helsinki</div>
+                <div class="product_title">Are Chicken Bird</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 22</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">14 seats</div>
+            <div class="cardimg10"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Tokyo</div>
+                <div class="product_title">Eagle and His Food</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 27</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€50</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">11 seats</div>
+            <div class="cardimg11"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Sydney</div>
+                <div class="product_title">Read the Sign in Natural</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 27</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">18 seats</div>
+            <div class="cardimg12"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">London</div>
+                <div class="product_title">Eco System of the Natural</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 7</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in" >
+            <div class="ribbon-label">20 seats</div>
+            <div class="cardimg"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Taipei</div>
+                <div class="product_title">Bird Watching Amazing</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€20</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label2">5 seats left!</div>
+            <div class="cardimg2"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Helsinki</div>
+                <div class="product_title">How to Save Birds</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 08</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item news" >
+            <div class="ribbon-label">25 seats</div>
+            <div class="cardimg3"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Tokyo</div>
+                <div class="product_title">A Bird Lesson</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€30</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item news">
+            <div class="ribbon-label">10 seats</div>
+            <div class="cardimg4"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Sydney</div>
+                <div class="product_title">Save the World</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€50</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">8 seats</div>
+            <div class="cardimg5"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">London</div>
+                <div class="product_title">See the Lil Birds</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€50</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in">
+            <div class="ribbon-label">10 seats</div>
+            <div class="cardimg6"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Amsterdam</div>
+                <div class="product_title">Bird Watching Society</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 02</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€70</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in">
+            <div class="ribbon-label2">2 seats left!</div>
+            <div class="cardimg7"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Oulu</div>
+                <div class="product_title">Basic Understanding</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 08</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item in">
+            <div class="ribbon-label">11 seats</div>
+            <div class="cardimg8"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Taipei</div>
+                <div class="product_title">Eco System of the Natural</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 7</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item news">
+            <div class="ribbon-label">11 seats</div>
+            <div class="cardimg9"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Helsinki</div>
+                <div class="product_title">Are Chicken Bird</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 22</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">14 seats</div>
+            <div class="cardimg10"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Tokyo</div>
+                <div class="product_title">Eagle and His Food</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 27</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€50</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">11 seats</div>
+            <div class="cardimg11"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">Sydney</div>
+                <div class="product_title">Read the Sign in Natural</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 27</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        <div class="card item out">
+            <div class="ribbon-label">18 seats</div>
+            <div class="cardimg12"></div>
+            <div class="product_content_wrapper">
+                <div class="category_name">London</div>
+                <div class="product_title">Eco System of the Natural</div>
+                <div class="product_detail">
+                    <div class="product_date">Feb 7</div>
+                    <div class="product_join">Join</div>
+                    <div class="product_fee">€10</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div id="map">
+        
+        <h4 class="tags2" >Search<i class="fas fa-times" id="fa-times"></i></h4>
+
+        <div class="search">
+            <div class="city_selector">
+                <i class="fas fa-map-marker-alt locate"></i>
+                <span class="default_city">Taipei </span><i class="fas fa-chevron-down down"></i>
+                <div class="dropdown_selector_wrapper">
+            
+                    <div class="dropdowns">
+                        <ul class="dropdowns2">
+                            <li class="dropdown_item"><span> Taipei </span></li>
+                            <li class="dropdown_item"><span> Sydney</span></li>
+                            <li class="dropdown_item"><span> Helsinki</span></li>
+                            <li class="dropdown_item"><span> Tokyo</span></li>
+                            <li class="dropdown_item"><span> London</span></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="search-wrapper">
+                <input type="text" value="" placeholder="Explore more..." name="s" id="search">
+                <button type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+            </div>
+
+        </div>
+
+        <!-- -------------------------------------------section_choice --------------------------------------->
+        <!-- -------------------------------------------section_choice --------------------------------------->
+        <!-- -------------------------------------------section_choice --------------------------------------->
+        
+            <h4 class="tags t1 accordion"  data-number="1">Filter by fees<i class="fas fa-chevron-up filter-down1 " ></i></h4>
+            
+            <div id="myDIV" style="display:block;">
+            <input type="text" id="amount" readonly style="height: 20px; font-size: 16px;border: none; color:#f6931f; font-weight:bold;">
+                <div id="slider-range" ></div>
+            </div>
+            <h4 class="tags t2 accordion"  data-number="2">Tags<i class="fas fa-chevron-up filter-down2 "></i></h4>
+            <div id="myDIV2" style="display:block;">
+            <div class="container" style="padding: 0 0;">
+                <div class="row">
+                    <div class=" newsmenu">
+                        
+                        <ul class="filters text-center">
+                            <li class="filterbox" class="clicks" data-filter=".in"><a class="fontfilter" href="">INDOOR</a></li>
+                            <li class="filterbox" data-filter=".out"><a class="fontfilter" href="">OUTDOOR</a></li>
+                            <li class="filterbox" data-filter=".news"><a class="fontfilter" href="">NEWSROOM</a></li>
+                            <li class="filterbox" data-filter=".out"><a class="fontfilter" href="">FREE</a></li>
+                            <li class="filterbox" data-filter=".news"><a class="fontfilter" href="">MOUNTAINS</a></li>
+                            <li class="filterbox" data-filter=".in"><a class="fontfilter" href="">BEACH</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <h4 class="tags t3 accordion"  data-number="3">Event Time<i class="fas fa-chevron-up filter-down3 " ></i></h4>
+            <div id="myDIV3" style="display:block;">
+            <div class="time-filter">
+                <div class="time-range">
+                 <input type="checkbox" name="time1" id="time1" value="morning">
+                 <label for="time1">
+                     <div class="timeintro">
+                        <span>Morning</span>
+                        <span class="specific-time">7:00am to 12:00pm</span>
+                     </div>
+                </label>
+                </div>
+                <div class="time-range">
+                    <input type="checkbox" name="time2" id="time2" value="afternoon">
+                    <label for="time2">
+                        <div class="timeintro">
+                           <span>Afternoon</span>
+                           <span class="specific-time">12:00pm to 4:00pm</span>
+                        </div>
+                   </label>
+                </div>
+                <div class="time-range">
+                    <input type="checkbox" name="time3" id="time3" value="evening">
+                 <label for="time3">
+                     <div class="timeintro">
+                        <span>Evening</span>
+                        <span class="specific-time">4:00am to 7:00pm</span>
+                     </div>
+                </label>
+                </div>
+                <div class="time-range">
+                    <input type="checkbox" name="time4" id="time4" value="night">
+                 <label for="time4">
+                     <div class="timeintro">
+                        <span>Night</span>
+                        <span class="specific-time">7:00pm and onwards</span>
+                     </div>
+                </label>
+                </div>
+            </div>
+        </div>
+
+
+            <h4 class="tags t4 accordion" data-number="4">Event Date<i class="fas fa-chevron-up filter-down4 " ></i></h4>
+            <div id="myDIV4" style="display:block;">
+            <div class="wrap">
+                <div class="cale-wrap">
+                    <div id="calendar" class="calendar">
+                        <input size="16" type="mm" id="input" value="2020-03-10" readonly="" class="form-control"> 
+                        <!-- <span  id="input" value="2012-06-15" >pick a date..</span> -->
+                    </div>
+                </div>
+            </div>
+            </div>
+         
+            <h4 class="tags t5 accordion" data-number="5">Guests<i class="fas fa-chevron-up filter-down5 "  ></i></h4>
+            <div id="myDIV5" style="display:block;">
+            <form>
+                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                <input type="number" id="number" value="0" />
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+            </form>
+            </div>
+            <h4 class="final">
+            <div class="final2">Submit</div>
+            <div class="final2">Reset</div>
+            </h4>
+    </div>
+</div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/activity.js"></script>
+    <script src="login.js"></script>
+    
+
+    
+
+</body>
+</html>
