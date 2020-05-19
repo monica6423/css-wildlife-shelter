@@ -18,5 +18,5 @@ This is my first try of web showcase page, mainly focused on css and javascript 
 
  
 
-<img src="https://j.gifs.com/r8WRyW.gif" />
+<img src="https://j.gifs.com/D1K9p5.gif" />
  
