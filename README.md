@@ -1,8 +1,9 @@
-# wildlife_shelter
+# wildlife_shelter(i luv bird)
 Demo:
 https://epic-johnson-695249.netlify.app/
 
-This is my first try of web showcase page, mainly focused on css and javascript animations
+This is my first tryout🧐, mainly focused on css and javascript animations
+
 
 1. Built with GSAP animation library
 
