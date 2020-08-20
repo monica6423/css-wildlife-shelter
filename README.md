@@ -2,7 +2,7 @@
 Demo:
 https://epic-johnson-695249.netlify.app/
 
-This is my first tryout🧐, mainly focused on css and javascript animations
+This is my first tryout🧐, just to play around UI / idea stuff. Mainly focused on css and javascript animations
 
 
 1. Built with GSAP animation library
@@ -15,7 +15,7 @@ This is my first tryout🧐, mainly focused on css and javascript animations
 
 5. CSS transition
 
-5. Adobe Illustrator
+5. Adobe Illustrator 💡💡💡
 
  
 
